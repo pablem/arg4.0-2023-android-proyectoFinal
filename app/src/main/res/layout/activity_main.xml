@@ -10,34 +10,33 @@
         android:id="@+id/container"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_margin="16dp"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5">
+        app:layout_constraintTop_toTopOf="parent" >
 
         <EditText
             android:id="@+id/text1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="1"
             android:hint="@string/lbl_text" />
 
         <Space
-            android:layout_width="32dp"
-            android:layout_height="wrap_content" />
+            android:layout_width="wrap_content"
+            android:layout_height="8dp" />
 
         <EditText
             android:id="@+id/text2"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:hint="@string/lbl_text" />
 
         <Space
-            android:layout_width="32dp"
-            android:layout_height="wrap_content" />
+            android:layout_width="wrap_content"
+            android:layout_height="16dp" />
 
         <Button
             android:id="@+id/compare_button"
@@ -46,23 +45,16 @@
             android:text="Comparar" />
 
         <Space
-            android:layout_width="32dp"
-            android:layout_height="wrap_content" />
+            android:layout_width="wrap_content"
+            android:layout_height="16dp" />
 
         <TextView
             android:id="@+id/message_result"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-
-            android:text="..." />
+            android:layout_height="wrap_content"
+            android:text="..."
+            android:textSize="16sp"
+            android:textStyle="bold" />
     </LinearLayout>
-
-    <androidx.constraintlayout.widget.Barrier
-        android:id="@+id/barrier2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:barrierDirection="left"
-        app:constraint_referenced_ids="container" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
